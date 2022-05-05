@@ -12,7 +12,7 @@ public class EvenOddPrimeServiceImpl implements EvenOddPrimeService {
 
      public void evenPrime(Integer n) throws IOException {
          KnowledgeService service = new KnowledgeService();
-         URL rulesetUrl =new File("C:\\Users\\Divya_Intern\\Desktop\\Evrete\\evrete\\src\\main\\resources\\rules\\ruleFile").toURI().toURL();
+         URL rulesetUrl =new File("src/main/resources/rules/ruleFile").toURI().toURL();
 
          Knowledge knowledge = service
                  .newKnowledge(

@@ -8,7 +8,7 @@ public class RulesetEvenOdd {
     @Rule
     @Where(value = "$n%2 == 0")
     public void rule1(@Fact("$n") int n) {
-        System.out.println("It is even number");
+        System.out.println("It even number");
     }
 
     @Rule
