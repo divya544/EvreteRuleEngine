@@ -6,3 +6,4 @@ Here I write 4 rules:-
 2) Number is odd
 3) Number is prime
 4) Number is non- prime
+You can save rule file with anyname.
