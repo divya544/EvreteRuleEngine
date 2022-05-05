@@ -1,0 +1,32 @@
+package resources.rules;
+
+import org.evrete.dsl.annotation.Fact;
+import org.evrete.dsl.annotation.Rule;
+import org.evrete.dsl.annotation.Where;
+
+public class RulesetEvenOdd {
+    @Rule
+    @Where(value = "$n%2 == 0")
+    public void rule1(@Fact("$n") int n) {
+        System.out.println("It is even number");
+    }
+
+    @Rule
+    @Where(value = "$n%2!=0")
+    public void rule2(@Fact("$n") int n){
+        System.out.println("It is odd number");
+    }
+
+    @Rule
+    @Where(value = "$flag==true")
+    public void rule3(@Fact("$flag") boolean flag) {
+        System.out.println("It is not prime number");
+    }
+
+    @Rule
+    @Where(value = "$flag==false")
+    public void rule4(@Fact("$flag") boolean flag) {
+        System.out.println("It is prime number");
+    }
+
+}
