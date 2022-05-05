@@ -1,6 +1,6 @@
 # EvreteRuleEngine
-It is spring boot project
-In which you take a number in request body and find it is even odd or prime by using evrete rule engine
+It is spring boot project.
+In which you take a number in request body and find it is even odd or prime by using evrete rule engine.
 Here I write 4 rules:-
 1) Number is even
 2) Number is odd
